@@ -19,4 +19,4 @@ Additionally, if CommonJS is being used and using the AMD CommonJS wrapper via t
 * `git clone git://github.com/dbashford/MimosaNoRequireJS.git`
 * `cd MimosaNoRequireJS`
 * `mimosa watch -s`
-* http://localhost:3000
+* [View the app](http://localhost:3000)
