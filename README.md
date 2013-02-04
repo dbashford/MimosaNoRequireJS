@@ -13,3 +13,10 @@ Obviously, with no require, Mimosa's use of r.js is no longer available.  So whi
 The last bullet above, "No templates used", is a current limitation that will be removed in the near future.  Near-future Mimosa releases will allow for template files to be compiled and concatenated without wrapping them in AMD.  Mimosa will then also not deliver AMD compliant versions of the micro-template client libraries.
 
 Additionally, if CommonJS is being used and using the AMD CommonJS wrapper via the [mimosa-require-commonjs module](https://github.com/dbashford/mimosa-require-commonjs) module is distasteful, far-future modules will have full CommonJS support, rather than CommonJS support via RequireJS.  That is not on the near-term roadmap, but I definitely would support someone familiar with that problem to put a Mimosa module solution together.
+
+## Install
+
+* `git clone git://github.com/dbashford/MimosaNoRequireJS.git`
+* `cd MimosaNoRequireJS`
+* `mimosa watch -s`
+* http://localhost:3000
