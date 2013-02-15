@@ -8,7 +8,7 @@
 
 exports.config = {
 
-  # minMimosaVersion:null   # The minimum Mimosa version that must be installed to use the
+  minMimosaVersion:"0.9.1"   # The minimum Mimosa version that must be installed to use the
                             # project. Defaults to null, which means Mimosa will not check
                             # the version.  This is a no-nonsense way for big teams to ensure
                             # everyone stays up to date with the blessed Mimosa version for a
@@ -50,7 +50,9 @@ exports.config = {
       # coffee: ["coff"]        # This is an example override, this is not a default, must be
                                 # array of strings
 
-  # template:
+  template:
+    amdWrap: false                   # Whether or not to wrap the compiled template files in
+                                      # an AMD wrapper for use with require.js
     # outputFileName: "templates"     # the file all templates are compiled into, is relative
                                       # to watch.javascriptDir.
 
@@ -62,21 +64,19 @@ exports.config = {
                                       # the extensions configured for a compiler in the
                                       # compilers.extensionOverrides section above.
 
-    # outputFiles: [{                 # outputFileName Alternate Config 2
-    #   folder:""                     # Use outputFiles instead of outputFileName if you want
+    # output: [{                      # output Alternate Config 2
+    #   folders:[""]                  # Use output instead of outputFileName if you want
     #   outputFileName: ""            # to break up your templates into multiple files, for
     # }]                              # instance, if you have a two page app and want the
                                       # templates for each page to be built separately.
-                                      # For each entry, provide a folder.  folder is relative
-                                      # to watch.javascriptDir and must exist.  outputFileName
-                                      # works identically to outputFileName above, including
-                                      # the alternate config, however, no default file name is
-                                      # assumed. An output name must be provided for each
-                                      # outputFiles entry, and the names must be unique.
-
-    # helperFiles:["app/template/handlebars-helpers"]  # relevant to handlebars only, the paths
-                                      # from watch.javascriptDir to the files containing
-                                      # handlebars helper/partial registrations
+                                      # For each entry, provide an array of folders that
+                                      # contain the templates to combine.  folders entries are
+                                      # relative to watch.javascriptDir and must exist.
+                                      # outputFileName works identically to outputFileName
+                                      # above, including the alternate config, however, no
+                                      # default file name is assumed. An output name must be
+                                      # provided for each output entry, and the names
+                                      # must be unique.
 
   ###
   # the extensions of files to copy from sourceDir to compiledDir. vendor js/css, images, etc.
