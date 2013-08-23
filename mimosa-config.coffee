@@ -1,6 +1,6 @@
 exports.config =
-  minMimosaVersion:"0.11.5"
-  modules: ["server","minify","lint","live-reload"]
+  minMimosaVersion:"0.14.14"
+  modules: ["server","minify","lint","live-reload","bower"]
   template:
     amdWrap: false
   server:
