@@ -1,4 +1,5 @@
 {
+  "watch": true,
   "bowerDir": {
     "path": ".mimosa/bower/bower_components",
     "clean": true,
@@ -12,6 +13,7 @@
     "strategy": {},
     "forceLatest": true,
     "exclude": [],
+    "unknownMainFullCopy": false,
     "overridesArrays": {},
     "overridesObjects": {},
     "mainOverrides": {},

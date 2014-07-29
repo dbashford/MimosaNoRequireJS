@@ -1,8 +1,20 @@
 exports.config =
-  minMimosaVersion:"0.14.14"
-  modules: ["server","minify","lint","live-reload","bower"]
+  minMimosaVersion:"2.1.0"
+  modules: [
+    "server",
+    "minify-js"
+    "minify-css",
+    "jshint",
+    "csslint"
+    "live-reload",
+    "bower",
+    "coffeescript",
+    "less",
+    "handlebars",
+    "copy"
+  ]
   template:
-    amdWrap: false
+    wrapType: "none"
   server:
     defaultServer:
       enabled:true
